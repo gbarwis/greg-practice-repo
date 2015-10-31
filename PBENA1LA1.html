@@ -1,0 +1,70 @@
+<head>
+<meta name="author" content="Greg Barwis"> <!--- heavily modified from the original source (author unknown) - redid clocks from scratch, updated headings, redid graphs, increased columns --->
+<title> PBE / NA1 / LA1 </title>
+</head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script type="text/javascript">
+       setInterval(refreshIframeSet1, 20000);
+       function refreshIframeSet1() {
+           $("#Frame1")[0].src = $("#Frame1")[0].src;
+           $("#Frame2")[0].src = $("#Frame2")[0].src;
+           $("#Frame3")[0].src = $("#Frame3")[0].src;
+           $("#Frame4")[0].src = $("#Frame4")[0].src;
+           $("#Frame5")[0].src = $("#Frame5")[0].src;
+           $("#Frame6")[0].src = $("#Frame6")[0].src;
+           $("#Frame7")[0].src = $("#Frame7")[0].src;
+           $("#Frame8")[0].src = $("#Frame8")[0].src;
+           $("#Frame9")[0].src = $("#Frame9")[0].src;
+           $("#Frame10")[0].src = $("#Frame10")[0].src;
+           $("#Frame11")[0].src = $("#Frame11")[0].src;
+           $("#Frame12")[0].src = $("#Frame12")[0].src;
+           $("#Frame13")[0].src = $("#Frame13")[0].src;
+           $("#Frame14")[0].src = $("#Frame14")[0].src;
+           $("#Frame15")[0].src = $("#Frame15")[0].src;
+       }
+   </script>
+
+<body <body bgcolor="black">
+<center>
+<table>
+
+<tr>
+<td><center><p style="color:white;font-family:Arial,sans-serif;font-size:80;vertical-align:top">PBE<iframe src="http://free.timeanddate.com/clock/i4msdy59/n137/fn9/fs36/fc0f0/tc000/tt0/tw1/tm1/td2/th1/ta1/tb4" frameborder="0" width="315" height="83"></iframe></p></center></td> <!-- PBE clock -->
+<td><center><p style="color:white;font-family:Arial,sans-serif;font-size:80;vertical-align:top">NA1<iframe src="http://free.timeanddate.com/clock/i4msdy59/n137/fn9/fs36/fc0f0/tc000/tt0/tw1/tm1/td2/th1/ta1/tb4" frameborder="0" width="315" height="83"></iframe></p></center></td> <!-- NA1 clock -->
+<td><center><p style="color:white;font-family:Arial,sans-serif;font-size:80;vertical-align:top">LA1<iframe src="http://free.timeanddate.com/clock/i4msdy59/n155/fn9/fs36/fc0f0/tc000/tt0/tw1/tm1/td2/th1/ta1/tb4" frameborder="0" width="315" height="83"></iframe></p></center></td> <!-- LA1 clock -->
+</tr>
+
+<tr>
+<td><iframe id="Frame1" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=876&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- PBE reconnects -->
+<td><iframe id="Frame2" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=875&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- NA1 reconnects -->
+<td><iframe id="Frame3" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1525&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- LA1 reconnects -->
+</tr>
+
+<tr>
+<td><iframe id="Frame4" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=649&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- PBE CCU/PIG -->
+<td><iframe id="Frame5" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=644&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- NA1 CCU/PIG -->
+<td><iframe id="Frame6" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1519&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- LA1 CCU/PIG -->
+</tr>
+
+<tr>
+<td><iframe id="Frame7" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=261&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- PBE Login Queue -->
+<td><iframe id="Frame8" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=136&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- NA1 Login Queue -->
+<td><iframe id="Frame9" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1539&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- LA1 Login Queue -->
+</tr>
+
+<tr>
+<td><iframe id="Frame10" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1253&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- PBE Game Starts / Ends -->
+<td><iframe id="Frame11" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1048&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- NA1 Game Starts / Ends -->
+<td><iframe id="Frame12" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1527&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- LA1 Game Starts / Ends -->
+</tr>
+
+<tr>
+<td><iframe id="Frame13" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1429&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- PBE LSM Stats -->
+<td><iframe id="Frame14" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1427&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- NA1 LSM Stats -->
+<td><iframe id="Frame15" src="https://noc-cacti.riotgames.com/cacti/graph_image.php?action=view&local_graph_id=1541&rra_id=1&graph_height=115&graph_width=566&graph_nolegend=true" frameborder="0" width=632 height=175></iframe></td> <!-- LA1 LSM Stats -->
+</tr>
+
+</table>
+</center>
+</body>
